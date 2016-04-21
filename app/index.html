@@ -1,0 +1,354 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit">
+  <title>EMBLEM 2016</title>
+
+  <!-- Place favicon.ico in the `app/` directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#2E3AA1">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- Because this project uses vulcanize this should be your only html import
+       in this file. All other imports should go in elements.html -->
+  <link rel="import" href="elements/elements.html">
+
+  <!-- For shared styles, shared-styles.html import in elements.html -->
+  <style is="custom-style" include="shared-styles"></style>
+  <link rel="stylesheet" href="styles/magic.min.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+</head>
+
+<body>
+  <template is="dom-bind" id="app">
+    <section>
+      <!-- Main Toolbar -->
+      <paper-toolbar id="mainToolbar">
+        <span class='flex'></span>
+        <!-- Toolbar -->
+        <paper-toolbar>
+          <h2 class="title">EMBLEM 2016</h2>
+          <paper-tabs class='paper-tab-content'>
+            <div class='paper-tab-content'>
+              <paper-tab>
+                Tickets
+              </paper-tab>
+              <paper-ripple recenters></paper-ripple>
+            </div>
+            <div class='paper-tab-content'>
+              <paper-tab>
+                Speakers
+              </paper-tab>
+              <paper-ripple recenters></paper-ripple>
+            </div>
+            <div class='paper-tab-content'>
+              <paper-tab>
+                Speakers
+              </paper-tab>
+              <paper-ripple recenters></paper-ripple>
+            </div>
+          </paper-tabs>
+          <paper-progress value="10"></paper-progress>
+        </paper-toolbar>
+      </paper-toolbar>
+
+      <!-- Main Content -->
+      <div>
+        <section class='landing' data-route="home" tabindex="-1">
+          <paper-card>
+            <div class="card-content">EMBLEM 2016</div>
+            <div class="card-actions">
+              <paper-button class='tickets'>Tickets</paper-button>
+            </div>
+          </paper-card>
+      </div>
+      <div class='info-container'>
+        <div class='info box'>
+          <div class="card-content">June 10-11, 2016</div>
+          <div class="card-actions">
+            <paper-button class='tickets'>Boston Copley Marriott</paper-button>
+          </div>
+        </div>
+        <div class='info2 box' >
+          <div class="card-content">June 10-11, 2016</div>
+          <div class="card-actions">
+            <paper-button class='tickets'>Boston Copley Marriott</paper-button>
+          </div>
+        </div>
+      </div>
+      <div class='speakers-container'>
+        <div class='speakers box'>
+          <ul>
+            <li class="avatar-frame"> 
+              <img src='images/assets/speakers_aman_advani.jpg?changed'>
+              <div class='avatar-name'>
+                Aman Advani
+              </div>
+            </li>
+            <li class="avatar-frame">
+              <img class="chung" src='images/assets/speakers_andrew_chung.jpg?changed'>
+               <div class='avatar-name'>
+                Andrew Chung
+              </div>
+            </li>
+            <li class="avatar-frame"> 
+              <img class="breazeal" src='images/assets/speakers_cynthia_breazeal.jpg?changed'>
+               <div class='avatar-name'>
+                Cynthia Breazeal
+              </div>
+            </li>
+            <li class="avatar-frame"> 
+              <img src='images/assets/speakers_miguel_mckelvey.jpg?changed'>
+               <div class='avatar-name'>
+                Miguel McKelvey
+              </div>
+            </li>
+            <li class="avatar-frame"> 
+              <img class="kaufer" src='images/assets/speakers_steve_kaufer.jpg?changed'>
+               <div class='avatar-name'>
+                Steve Kaufer
+              </div>
+            </li>
+            <li class="avatar-frame"> 
+              <img class="hsieh" src='images/assets/speakers_tony_hsieh.jpg?changed'>
+               <div class='avatar-name'>
+                Tony Hsieh
+              </div>
+            </li>
+            <li class="avatar-frame"> 
+              <img class="malan" src='images/assets/speakers_david_malan.jpg?changed'>
+               <div class='avatar-name'>
+                David Malan
+              </div>
+            </li>
+            <li class="avatar-frame"> 
+              <img class="chen" src='images/assets/speakers_elaine_chen.jpg?changed'>
+               <div class='avatar-name'>
+                Elaine Chen
+              </div>
+            </li>
+            <li class="avatar-frame"> 
+              <img class="nijhawan" src='images/assets/speakers_vinit_nijhawan.jpg?changed'>
+               <div class='avatar-name'>
+                Vinit Nijhawan
+              </div>
+            </li>
+            <li class="avatar-frame"> 
+              <img src='images/assets/speakers_tom_chi.jpg?changed'>
+               <div class='avatar-name'>
+                Tom Chi
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='schedule-container'>
+        <div class='schedule-column time'>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>9:00
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>10:00
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>12:00
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>1:00
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>2:00
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>3:00
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>4:00
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>5:00
+            </paper-card>
+          </div>
+        </div>
+      </div>
+      <div class='schedule-column'>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>June 10
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Workshop
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Speaker
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Startup
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Workshop
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Speaker
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Workshop
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Workshop
+            </paper-card>
+          </div>
+        </div>
+      </div>
+      <div class='schedule-column'>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>June 11
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Keynote
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Workshop
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Startup
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Startup
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Speaker
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Workshop
+            </paper-card>
+          </div>
+        </div>
+        <div class='schedule-item'>
+          <div class="card-content">
+            <paper-card>Workshop
+            </paper-card>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section> 
+      <div class='map-container'>
+        <div class='map box'>
+          <div class="map-content">
+            <paper-card>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.8012225656967!2d-71.08159238454411!3d42.3467611791877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a0de7e77a4b%3A0x1a77f7939c6472fb!2sBoston+Marriott+Copley+Place!5e0!3m2!1sen!2sus!4v1461269865828" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </paper-card>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</template>
+</html>
