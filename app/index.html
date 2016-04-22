@@ -57,7 +57,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   <!-- For shared styles, shared-styles.html import in elements.html -->
   <style is="custom-style" include="shared-styles"></style>
-  <link rel="stylesheet" href="styles/magic.min.css">
+
+  <!-- ADDONS -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="scripts/main.js"></script>
 </head>
@@ -65,47 +66,31 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <body>
   <template is="dom-bind" id="app">
     <section>
-      <!-- Main Toolbar -->
-      <paper-toolbar id="mainToolbar">
-        <span class='flex'></span>
-        <!-- Toolbar -->
-        <paper-toolbar>
-          <h2 class="title">EMBLEM 2016</h2>
-          <paper-tabs class='paper-tab-content'>
-            <div class='paper-tab-content'>
-              <paper-tab>
-                Tickets
-              </paper-tab>
-              <paper-ripple recenters></paper-ripple>
-            </div>
-            <div class='paper-tab-content'>
-              <paper-tab>
-                Speakers
-              </paper-tab>
-              <paper-ripple recenters></paper-ripple>
-            </div>
-            <div class='paper-tab-content'>
-              <paper-tab>
-                Speakers
-              </paper-tab>
-              <paper-ripple recenters></paper-ripple>
-            </div>
-          </paper-tabs>
-          <paper-progress value="10"></paper-progress>
-        </paper-toolbar>
+      <!-- HEADER -->
+      <paper-toolbar>
+        <paper-icon-button icon="menu" on-tap="menuAction"></paper-icon-button>
+        <div class="title">EMBLEM 2016</div>
+        <paper-tabs selected="0">
+          <paper-tab>TICKETS</paper-tab>
+          <paper-tab>SCHEDULE</paper-tab>
+        </paper-tabs>
+        <paper-icon-button icon="more-vert" on-tap="moreAction"></paper-icon-button>
+        <div id="progressBar" class="bottom fit"></div>
       </paper-toolbar>
-
       <!-- Main Content -->
       <div>
         <section class='landing' data-route="home" tabindex="-1">
           <paper-card>
-            <div class="card-content">EMBLEM 2016</div>
-            <div class="card-actions">
-              <paper-button class='tickets'>Tickets</paper-button>
+            <div class="card-content">
+              <div class='title'>
+                <div class='head-title'>EMBLEM </div>
+                <div class='year'>2016</div>
+              </div>
+              <div class="subhead">inspire. empower. ignite.</div>
             </div>
           </paper-card>
       </div>
-      <div class='info-container'>
+      <div id='info' class='info-container'>
         <div class='info box'>
           <div class="card-content">June 10-11, 2016</div>
           <div class="card-actions">

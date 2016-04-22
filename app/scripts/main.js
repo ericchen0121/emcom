@@ -1,0 +1,1 @@
+ $('paper-button.tickets').scrollTo($('#info'), 800);
